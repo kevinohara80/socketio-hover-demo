@@ -21,7 +21,7 @@ li {
 
 .box {
   float:left;
-  width:120px;
+  width:130px;
   height:120px;
   margin:5px;
   border:3px solid #CCC;
@@ -32,6 +32,10 @@ li {
 
 .box p {
   text-align:center;
+}
+
+#title p {
+  width:700px;
 }
 
 #server-window {
@@ -46,7 +50,7 @@ li {
   background-color: #222;
   height: 400px;
   overflow: scroll;
-  width: 600px;
+  width: 700px;
   border-radius: 5px; 
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px;
