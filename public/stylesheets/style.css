@@ -23,6 +23,16 @@ a {
 }
 
 .results {
-  margin-top:20px;
   clear:both;
+  margin-top:20px;
+}
+
+.red {
+  border-color: #FA4D56;
+  color: #FA4D56;
+}
+
+.green {
+  border-color: #2DC232;
+  color: #2DC232;
 }

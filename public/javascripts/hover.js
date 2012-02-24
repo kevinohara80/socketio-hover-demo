@@ -8,17 +8,20 @@
     //socket = io.connect('http://localhost:3000');
     
     socket.on('connect', function () {
+      
+      $('h2.status').removeClass('red').addClass('green').text('Status: Connected!');
         
-        $('.status').text('Status: Connected!');
+      $('.box').mouseover(function(){
+        $(this).addClass('green');
+        var txt = $(this).children().first('p').text();
+        socket.emit('hover', txt);
+      }).mouseout(function(){
+        $(this).removeClass('green');
+      });
         
-        $('.box').mouseover(function(){
-          var txt = $(this).children().first('p').text();
-          socket.emit('hover', txt);
-        });
-        
-        socket.on('data', function(data){
-          $('.results ul').append('<li>' + data + '</li>');
-        });
+      socket.on('data', function(data){
+        $('.results ul').append('<li>' + data + '</li>');
+      });
         
     });
     
