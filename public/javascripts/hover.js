@@ -4,6 +4,8 @@
   
   $(document).ready(function(){
     
+    $('.results ul').append('<li> &gt; Connecting to server...</li>');
+    
     socket = io.connect('http://sharp-flower-2982.herokuapp.com/');
     
     // uncomment for local testing on port 3000
