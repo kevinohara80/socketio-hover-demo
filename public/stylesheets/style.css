@@ -49,7 +49,7 @@ li {
   padding: 10px 20px;
   background-color: #222;
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 700px;
   border-radius: 5px; 
   -moz-border-radius: 5px; 
