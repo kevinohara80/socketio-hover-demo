@@ -33,7 +33,8 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Express'
+    title: 'socket.io hover demo',
+    description: 'this is a demo of socket.io showing how DOM events can be streamed to a node.js app'
   });
 });
 
