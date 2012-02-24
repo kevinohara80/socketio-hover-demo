@@ -5,7 +5,9 @@
   $(document).ready(function(){
     
     socket = io.connect('http://sharp-flower-2982.herokuapp.com/');
-    //socket = io.connect('http://localhost:3000');
+    
+    // uncomment for local testing on port 3000
+    // socket = io.connect('http://localhost:3000');
     
     socket.on('connect', function () {
       
@@ -20,7 +22,9 @@
       });
         
       socket.on('data', function(data){
-        $('.results ul').append('<li>' + data + '</li>');
+        var height = $('.results ul').height();
+        $('.results ul').append('<li> &gt; ' + data + '</li>');
+        $('.results').scrollTop(height);
       });
         
     });

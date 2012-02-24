@@ -7,6 +7,18 @@ a {
   color: #00B7FF;
 }
 
+ul {
+  margin:0;
+  padding:0;
+}
+
+li {
+  font-size: .9em;
+  list-style: none;
+  color: #2DC232;
+  font-family: courier;
+}
+
 .box {
   float:left;
   width:120px;
@@ -22,9 +34,22 @@ a {
   text-align:center;
 }
 
+#server-window {
+  clear:both;
+}
+
 .results {
   clear:both;
   margin-top:20px;
+  padding: 0;
+  padding: 10px 20px;
+  background-color: #222;
+  height: 400px;
+  overflow: scroll;
+  width: 600px;
+  border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;
 }
 
 .red {
