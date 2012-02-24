@@ -42,6 +42,8 @@ app.get('/', function(req, res){
 var count = 0;
 
 io.sockets.on('connection', function (socket) {
+  
+  socket.emit('data', 'Connected to server!');
 
   socket.on('hover', function (msg) {
     count++;
