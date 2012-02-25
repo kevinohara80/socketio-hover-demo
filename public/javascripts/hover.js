@@ -12,8 +12,6 @@
     // socket = io.connect('http://localhost:3000');
     
     socket.on('connect', function () {
-      
-      $('h2.status').removeClass('red').addClass('green').text('Status: Connected!');
         
       $('.box').mouseover(function(){
         $(this).addClass('green');
