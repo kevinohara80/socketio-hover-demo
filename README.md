@@ -6,8 +6,6 @@ This app may be live right now at [http://sharp-flower-2982.herokuapp.com/](http
 
 ### running the demo locally
 
-Edit the hover.js file to point to your server uri and port. Then fire it up  
-
 ```bash
 $  node app.js
 ```

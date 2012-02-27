@@ -6,10 +6,7 @@
     
     $('.results ul').append('<li> &gt; Connecting to server...</li>');
     
-    socket = io.connect('http://sharp-flower-2982.herokuapp.com/');
-    
-    // uncomment for local testing on port 3000
-    // socket = io.connect('http://localhost:3000');
+    socket = io.connect(window.location);
     
     socket.on('connect', function () {
         
