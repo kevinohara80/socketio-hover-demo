@@ -1,4 +1,4 @@
-(function($, io) {
+(function($) {
   
   var socket; 
   
@@ -25,7 +25,7 @@
       });
         
     });
-    
+
   });
   
-})(jQuery, io);
+})(jQuery);
