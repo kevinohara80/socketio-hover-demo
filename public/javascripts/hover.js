@@ -40,6 +40,10 @@
       consoleWrite('Connection to the server failed!');
     });
     
+    socket.on('error', function(e){
+      consoleWrite(e ? e : 'A unknown error occurred');
+    });
+    
   });
   
 })(jQuery);
