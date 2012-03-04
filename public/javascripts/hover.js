@@ -14,7 +14,7 @@
     
     socket = io.connect(window.location);
     
-    socket.on('connnecting', function(transport) {
+    socket.on('connecting', function(transport) {
       consoleWrite('Trying transport: ' + transport);
     });
     
